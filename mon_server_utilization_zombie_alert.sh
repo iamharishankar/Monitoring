@@ -6,17 +6,17 @@
 # -----------
 # This script will monitor the Server CPU, Memory, Swap, and Zombie Process every 5/10/15 mins (depending on schedule in cron).
 
-export email_add=xyz@xyz.com
-export filelocation="/tmp"                                                                     
-export MESSAGE="$filelocation/mail.txt"                                                        
-export ZMESSAGE="$filelocation/zmail.txt"                                                              
-export Zlistfile="$filelocation/Zlistfile.log"                         
-export memoryfile="$filelocation/memory_$(date "+%Y%m%d%H%M%S").csv"   
-export memoryfileday="$filelocation/memory_$(date "+%Y%m%d").csv"      
-export cpufile="$filelocation/cpu_$(date "+%Y%m%d%H%M%S").csv"         
-export cpufileday="$filelocation/cpu_$(date "+%Y%m%d").csv"            
-export zombiefile="$filelocation/zombie_$(date "+%Y%m%d%H%M%S").csv"   
-export zombiefileday="$filelocation/zombie_$(date "+%Y%m%d").csv" 
+email_add=xyz@xyz.com
+filelocation="/tmp"                                                                     
+MESSAGE="$filelocation/mail.txt"                                                        
+ZMESSAGE="$filelocation/zmail.txt"                                                              
+Zlistfile="$filelocation/Zlistfile.log"                         
+memoryfile="$filelocation/memory_$(date "+%Y%m%d%H%M%S").csv"   
+memoryfileday="$filelocation/memory_$(date "+%Y%m%d").csv"      
+cpufile="$filelocation/cpu_$(date "+%Y%m%d%H%M%S").csv"         
+cpufileday="$filelocation/cpu_$(date "+%Y%m%d").csv"            
+zombiefile="$filelocation/zombie_$(date "+%Y%m%d%H%M%S").csv"   
+zombiefileday="$filelocation/zombie_$(date "+%Y%m%d").csv" 
 
 # Step0: Check the present date and time.
 echo Current Date and Time is: `date +"%Y-%m-%d %T"`
