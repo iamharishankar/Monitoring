@@ -1,4 +1,5 @@
 #!/bin/bash
+# monitor server log every hour to avoid repeated alerts.
 dba_team=xyz@abc.com
 fromdate=$(date +"%Y-%m-%d")
 cd /var/log/ || return
